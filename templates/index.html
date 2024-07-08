@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp API Client</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="input-field id-instance">
+                <input type="text" id="idInstance" placeholder="idInstance">
+            </div>
+            <div class="input-field api-token-instance">
+                <input type="password" id="apiTokenInstance" placeholder="ApiTokenInstance"> <!-- Скрытие введенного текста -->
+            </div>
+            <div class="button get-settings">
+                <button onclick="getSettings()">getSettings</button>
+            </div>
+            <div class="button get-state-instance">
+                <button onclick="getStateInstance()">getStateInstance</button>
+            </div>
+            <div class="input-field phone-number">
+                <input type="text" id="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="input-field message">
+                <input type="text" id="message" placeholder="Message">
+            </div>
+            <div class="button send-message">
+                <button onclick="sendMessage()">sendMessage</button>
+            </div>
+            <div class="input-field phone-number">
+                <input type="text" id="phoneNumberFile" placeholder="Phone Number">
+            </div>
+            <div class="input-field file-url">
+                <input type="text" id="fileUrl" placeholder="File URL">
+            </div>
+            <div class="button send-file-by-url">
+                <button onclick="sendFileByUrl()">sendFileByUrl</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h5 style="margin: 0;">Ответ:</h5>
+            <pre id="responseOutput"></pre>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

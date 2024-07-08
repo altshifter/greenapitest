@@ -1,0 +1,128 @@
+body {
+    font-family: 'Papyrus', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота окна просмотра */
+}
+
+.container {
+    display: flex;
+    width: 900px; /* Ширина контейнера */
+    height: auto; /* Автоматическая высота */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.left-panel, .right-panel {
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-sizing: border-box; /* Учитывать padding и border в общие размеры элемента */
+}
+
+.left-panel {
+    width: 45%; /* 45% от ширины контейнера */
+    margin-right: 10px; /* Отступ между панелями */
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    gap: 10px; /* Отступ между элементами, чтобы они не накладывались */
+}
+
+.right-panel {
+    width: 55%; /* 55% от ширины контейнера */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание элементов внутри панели сверху */
+}
+
+.input-field, .button {
+    box-sizing: border-box; /* Учитывать padding и border в общие размеры элемента */
+}
+
+.input-field input, .button button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Учитывать padding и border в общие размеры элемента */
+}
+
+.button button {
+    background-color: grey; 
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.button button:hover {
+    background-color: #0056b3; /* Темно-синий фон при наведении */
+}
+
+.right-panel pre {
+    white-space: pre-wrap; /* Перенос строк внутри блока pre */
+    background-color: #eaeaea; /* Светло-серый фон */
+    padding: 10px;
+    border-radius: 4px; /* Закругленные углы */
+    border: 1px solid #ddd; /* Светло-серая рамка */
+    flex-grow: 1; /* Элемент растягивается, занимая доступное место */
+    overflow-y: auto; /* Добавляет вертикальную полосу прокрутки, если контент превышает высоту панели */
+}
+
+/* Пример индивидуальных изменений размеров */
+.input-field.id-instance input {
+    width: 100%;
+    height: 30px; /* Пример изменения высоты */     
+}
+
+.input-field.api-token-instance input {
+    width: 100%;
+    height: 30px; /* Пример изменения высоты */
+    margin-top: -20%;
+}
+
+.button.get-settings button {
+    width: 100%;
+    height: 60px; /* Пример изменения высоты */
+    margin-top: 5%;
+}
+
+.button.get-state-instance button {
+    width: 100%;
+    height: 60px; /* Пример изменения высоты */
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+
+.input-field.phone-number input {
+    width: 100%;
+    height: 30px; /* Пример изменения высоты */
+    margin-bottom: -5%;
+}
+
+.input-field.message input {
+    width: 100%;
+    height: 80px; /* Пример изменения высоты */
+}
+
+.button.send-message button {
+    width: 100%;
+    height: 60px; /* Пример изменения высоты */
+    margin-bottom: 5%;
+}
+
+.input-field.file-url input {
+    width: 100%;
+    height: 30px; /* Пример изменения высоты */
+    margin-top: -30%;    
+}
+
+.button.send-file-by-url button {
+    width: 100%;
+    height: 60px; /* Пример изменения высоты */
+}
