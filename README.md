@@ -25,3 +25,4 @@ idInstance и ApiTokenInstance
 Пользователь последовательно нажимает на кнопки «getSettings»,
 «sendMessage» и видит результат работы – сообщения отправляются, ответ
 методов отображается на странице.
+![image](https://github.com/altshifter/greenapitest/assets/41440410/acb36a4d-a6fa-4239-9982-1a55ef3c3979)
